@@ -66,6 +66,8 @@ interface types {
         /// Read mode: Data can be read.
         read,
         /// Write mode: Data can be written to.
+        ///
+        /// Governs file contents only; independent of `mutate-directory`.
         write,
         /// Request that writes be performed according to synchronized I/O file
         /// integrity completion. The data stored in the file and the file's
